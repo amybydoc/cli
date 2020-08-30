@@ -15,7 +15,7 @@ func NewBuilderCommand(dockerCli command.Cli) *cobra.Command {
 		Short:       "Manage builds",
 		Args:        cli.NoArgs,
 		RunE:        command.ShowHelp(dockerCli.Err()),
-		Annotations: map[string]string{"version": "1.31"},
+		Annotations: map[string]string{"version": "1.32"},
 	}
 	cmd.AddCommand(
 		NewPruneCommand(dockerCli),
